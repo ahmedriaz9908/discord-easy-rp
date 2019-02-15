@@ -1,1 +1,11 @@
 # discord-easy-rp
+
+Simple discord-rpc client. 
+1. Create your client at the discord dev portal. 
+2. upload ur images if you want them. 
+3. get the client id and paste it into the rp.js file, at the bottom.
+4. make sure you have a local discord client running.
+5. make sure you have node js installed. navigate to ur project folder, then type `npm install`. this will install the 2 dependencies enlisted in package.json
+6. once installed, run `node rp.js`
+7. you should have your set status! if thhere is any issues or concerns dm me M7MD#0005 or here i guess
+

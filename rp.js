@@ -8,25 +8,23 @@ rpc.config = config;
 var d1 = new Date ();
 var d2 = new Date(d1);
 
+// the time you want to set (for example, it will count back from 23 hrs as shown here. feel free to change it.
 d2.setSeconds(d1.getSeconds() + 86400000);
 
 rpc.on('ready', () => {
 	
 	rpc.setActivity({
-		details: config.Rich_Presence.details,
-		state: config.Rich_Presence.state,
-		//largeImageKey: config.Rich_Presence.file_bannername,
-		//largeImageText: config.Rich_Presence.bannername,
-		//smallImageKey: config.Rich_Presence.file_username,
-		//smallImageText: config.Rich_Presence.username,
+		details: "", // your rpc details here
+		state: "", // your state here (must be at least 2 char)
+		largeImageKey: "", // your large image here that you uploaded to ur application in the dev portal. 
+		largeImageText: "", // the text to show when mousing over ur large image
+		smallImageKey: "", // your small image
+		smallImageText: "", // the text to show when mousing over ur small image
 		instance: true,
-		partySize: 1,
-		partyMax: config.Rich_Presence.partyMax,
-		startTimestamp: d1,
-		endTimestamp: d2,
-               join: "025ed05c71f639de8bfaa0d679d7c94b2fdce12f",
-                spectate: "e7eb30d2ee025ed05c71ea495f770b76454ee4e0",
-               match: "4b2fdce12f639de8bfa7e3591b71a0d679d7c93f"
+		partySize: 1, // optional. this is ur party size included in state (e.x. 1 of partyMax)
+		partyMax: 1, 
+		startTimestamp: d1, // you can cut these two timestamps off if you dont want a timer
+		endTimestamp: d2
 	}).then(console.log('set rp')).catch(err => {});
 
 
@@ -34,4 +32,4 @@ rpc.on('ready', () => {
 });
 
 
-rpc.login(config.Client_Id).catch(console.error);
+rpc.login('YOUR-CLIENT-ID-HERE').catch(console.error);

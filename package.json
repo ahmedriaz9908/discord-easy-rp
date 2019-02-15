@@ -1,0 +1,29 @@
+{
+  "name": "richpresence",
+  "version": "0.1.1",
+  "description": "Rich Presence in JavaScript xd",
+  "main": "rp.js",
+  "dependencies": {
+    "discord.js": "^11.0.0",
+    "discord-rpc": "3.0.0-beta.12"
+"parse-ms": "^2.0.0",
+    "quick.db": "^7.0.0-b21"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node rp.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IndyV/Rich-Presence-Template.git"
+  },
+  "keywords": [
+    "RPC"
+  ],
+  "author": "IndyV",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IndyV/Rich-Presence-Template/issues"
+  },
+  "homepage": "https://github.com/IndyV/Rich-Presence-Template#readme"
+}
